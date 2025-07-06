@@ -1,5 +1,7 @@
 name: CI - PR
 on: [pull_request]
 jobs:
-  ReUse:
-    uses: anilkumarm429/roboshop-github-actions/.github/workflows/ci-pr.yml@main
+  Build:
+    uses: anilkumarm429/roboshop-github-actions/.github/workflows/ci-main.yml@main
+    with:
+      appType: 'maven'

@@ -3,8 +3,9 @@ on:
   push:
     branches:
       - 'ROBO-**'
+
 jobs:
-  ReUse:
+  Build:
     uses: anilkumarm429/roboshop-github-actions/.github/workflows/ci-dev.yml@main
     with:
       appType: 'maven'
